@@ -1,0 +1,102 @@
+#! /usr/local/Cellar/icarus-verilog/12.0/bin/vvp
+:ivl_version "12.0 (stable)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "/usr/local/Cellar/icarus-verilog/12.0/lib/ivl/system.vpi";
+:vpi_module "/usr/local/Cellar/icarus-verilog/12.0/lib/ivl/vhdl_sys.vpi";
+:vpi_module "/usr/local/Cellar/icarus-verilog/12.0/lib/ivl/vhdl_textio.vpi";
+:vpi_module "/usr/local/Cellar/icarus-verilog/12.0/lib/ivl/v2005_math.vpi";
+:vpi_module "/usr/local/Cellar/icarus-verilog/12.0/lib/ivl/va_math.vpi";
+S_0x7fe95cb04540 .scope module, "Basic" "Basic" 2 1;
+ .timescale 0 0;
+v0x7fe95cb046b0_0 .net *"_ivl_0", 1 0, L_0x7fe95ca04850;  1 drivers
+v0x7fe95ca04120_0 .net *"_ivl_10", 1 0, L_0x7fe95bf072e0;  1 drivers
+L_0x7fe948008098 .functor BUFT 1, C4<0>, C4<0>, C4<0>, C4<0>;
+v0x7fe95ca041e0_0 .net *"_ivl_13", 0 0, L_0x7fe948008098;  1 drivers
+L_0x7fe948008008 .functor BUFT 1, C4<0>, C4<0>, C4<0>, C4<0>;
+v0x7fe95ca04290_0 .net *"_ivl_3", 0 0, L_0x7fe948008008;  1 drivers
+v0x7fe95ca04320_0 .net *"_ivl_4", 1 0, L_0x7fe95bf07060;  1 drivers
+L_0x7fe948008050 .functor BUFT 1, C4<0>, C4<0>, C4<0>, C4<0>;
+v0x7fe95ca04400_0 .net *"_ivl_7", 0 0, L_0x7fe948008050;  1 drivers
+v0x7fe95ca044b0_0 .net *"_ivl_8", 1 0, L_0x7fe95bf071c0;  1 drivers
+v0x7fe95ca04560_0 .var "r_a", 0 0;
+v0x7fe95ca04600_0 .var "r_b", 0 0;
+v0x7fe95ca04710_0 .var "r_x", 0 0;
+v0x7fe95ca047a0_0 .net "w_add", 1 0, L_0x7fe95bf073c0;  1 drivers
+L_0x7fe95ca04850 .concat [ 1 1 0 0], v0x7fe95ca04560_0, L_0x7fe948008008;
+L_0x7fe95bf07060 .concat [ 1 1 0 0], v0x7fe95ca04600_0, L_0x7fe948008050;
+L_0x7fe95bf071c0 .arith/sum 2, L_0x7fe95ca04850, L_0x7fe95bf07060;
+L_0x7fe95bf072e0 .concat [ 1 1 0 0], v0x7fe95ca04710_0, L_0x7fe948008098;
+L_0x7fe95bf073c0 .arith/sum 2, L_0x7fe95bf071c0, L_0x7fe95bf072e0;
+    .scope S_0x7fe95cb04540;
+T_0 ;
+    %vpi_call 2 4 "$dumpfile", "wave.vcd" {0 0 0};
+    %vpi_call 2 5 "$dumpvars", 32'sb00000000000000000000000000000000, S_0x7fe95cb04540 {0 0 0};
+    %end;
+    .thread T_0;
+    .scope S_0x7fe95cb04540;
+T_1 ;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x7fe95ca04560_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x7fe95ca04600_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x7fe95ca04710_0, 0, 1;
+    %delay 2, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x7fe95ca04560_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x7fe95ca04600_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x7fe95ca04710_0, 0, 1;
+    %delay 2, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x7fe95ca04560_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x7fe95ca04600_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x7fe95ca04710_0, 0, 1;
+    %delay 2, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x7fe95ca04560_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x7fe95ca04600_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x7fe95ca04710_0, 0, 1;
+    %delay 2, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x7fe95ca04560_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x7fe95ca04600_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x7fe95ca04710_0, 0, 1;
+    %delay 2, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x7fe95ca04560_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x7fe95ca04600_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x7fe95ca04710_0, 0, 1;
+    %delay 2, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x7fe95ca04560_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x7fe95ca04600_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x7fe95ca04710_0, 0, 1;
+    %delay 2, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x7fe95ca04560_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x7fe95ca04600_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x7fe95ca04710_0, 0, 1;
+    %delay 2, 0;
+    %vpi_call 2 50 "$finish" {0 0 0};
+    %end;
+    .thread T_1;
+# The file index is used to find the file name in the following table.
+:file_names 3;
+    "N/A";
+    "<interactive>";
+    "Basic.v";

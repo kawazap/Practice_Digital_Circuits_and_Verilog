@@ -1,0 +1,52 @@
+$date
+	Mon May  6 17:09:32 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module Basic $end
+$var wire 2 ! w_add [1:0] $end
+$var reg 1 " r_a $end
+$var reg 1 # r_b $end
+$var reg 1 $ r_x $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+0$
+0#
+0"
+b0 !
+$end
+#2
+b1 !
+1"
+#4
+1#
+b1 !
+0"
+#6
+b10 !
+1"
+#8
+1$
+0#
+b1 !
+0"
+#10
+b10 !
+1"
+#12
+1#
+b10 !
+0"
+#14
+b11 !
+1"
+#16

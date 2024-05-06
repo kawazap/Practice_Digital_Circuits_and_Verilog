@@ -1,0 +1,53 @@
+#! /usr/local/Cellar/icarus-verilog/12.0/bin/vvp
+:ivl_version "12.0 (stable)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "/usr/local/Cellar/icarus-verilog/12.0/lib/ivl/system.vpi";
+:vpi_module "/usr/local/Cellar/icarus-verilog/12.0/lib/ivl/vhdl_sys.vpi";
+:vpi_module "/usr/local/Cellar/icarus-verilog/12.0/lib/ivl/vhdl_textio.vpi";
+:vpi_module "/usr/local/Cellar/icarus-verilog/12.0/lib/ivl/v2005_math.vpi";
+:vpi_module "/usr/local/Cellar/icarus-verilog/12.0/lib/ivl/va_math.vpi";
+S_0x7ffebd505e70 .scope module, "Basic" "Basic" 2 1;
+ .timescale 0 0;
+L_0x7ffead405da0 .functor AND 1, v0x7ffebd505fe0_0, v0x7ffead405bb0_0, C4<1>, C4<1>;
+L_0x7ffead405e70 .functor XOR 1, v0x7ffebd505fe0_0, v0x7ffead405bb0_0, C4<0>, C4<0>;
+v0x7ffebd505fe0_0 .var "r_a", 0 0;
+v0x7ffead405bb0_0 .var "r_b", 0 0;
+v0x7ffead405c60_0 .net "w_c", 0 0, L_0x7ffead405da0;  1 drivers
+v0x7ffead405d10_0 .net "w_s", 0 0, L_0x7ffead405e70;  1 drivers
+    .scope S_0x7ffebd505e70;
+T_0 ;
+    %vpi_call 2 4 "$dumpfile", "wave.vcd" {0 0 0};
+    %vpi_call 2 5 "$dumpvars", 32'sb00000000000000000000000000000000, S_0x7ffebd505e70 {0 0 0};
+    %end;
+    .thread T_0;
+    .scope S_0x7ffebd505e70;
+T_1 ;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x7ffebd505fe0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x7ffead405bb0_0, 0, 1;
+    %delay 2, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x7ffebd505fe0_0, 0, 1;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x7ffead405bb0_0, 0, 1;
+    %delay 2, 0;
+    %pushi/vec4 0, 0, 1;
+    %store/vec4 v0x7ffebd505fe0_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x7ffead405bb0_0, 0, 1;
+    %delay 2, 0;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x7ffebd505fe0_0, 0, 1;
+    %pushi/vec4 1, 0, 1;
+    %store/vec4 v0x7ffead405bb0_0, 0, 1;
+    %delay 2, 0;
+    %vpi_call 2 30 "$finish" {0 0 0};
+    %end;
+    .thread T_1;
+# The file index is used to find the file name in the following table.
+:file_names 3;
+    "N/A";
+    "<interactive>";
+    "Basic.v";

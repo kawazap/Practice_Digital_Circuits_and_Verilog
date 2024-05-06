@@ -1,0 +1,1 @@
+これは、VLSI.JPで提供されている[ディジタル回路とVerilog入門](https://vlsi.jp/DigitalCircuit_And_Verilog.html)で勉強したときのメモです。

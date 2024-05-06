@@ -1,0 +1,89 @@
+$date
+	Mon May  6 18:14:40 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module Basic $end
+$var wire 1 ! w_s $end
+$var wire 1 " w_c $end
+$var reg 1 # r_a $end
+$var reg 1 $ r_b $end
+$var reg 1 % r_x $end
+$scope module FA $end
+$var wire 1 # i_a $end
+$var wire 1 $ i_b $end
+$var wire 1 % i_x $end
+$var wire 1 " o_c $end
+$var wire 1 ! o_s $end
+$var wire 1 & w_c_ab $end
+$var wire 1 ' w_c_abx $end
+$var wire 1 ( w_s_ab $end
+$scope module HA1 $end
+$var wire 1 # i_a $end
+$var wire 1 $ i_b $end
+$var wire 1 & o_c $end
+$var wire 1 ( o_s $end
+$upscope $end
+$scope module HA2 $end
+$var wire 1 ( i_a $end
+$var wire 1 % i_b $end
+$var wire 1 ' o_c $end
+$var wire 1 ! o_s $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+0(
+0'
+0&
+0%
+0$
+0#
+0"
+0!
+$end
+#2
+1!
+1(
+1#
+#4
+1$
+0#
+#6
+1"
+0!
+1&
+0(
+1#
+#8
+0"
+1!
+0&
+1%
+0$
+0#
+#10
+1"
+1'
+0!
+1(
+1#
+#12
+1$
+0#
+#14
+0'
+1!
+1&
+0(
+1#
+#16
