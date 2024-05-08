@@ -1,0 +1,5 @@
+VCD info: dumpfile wave.vcd opened for output.
+o_p = 0000
+o_p = 4411
+o_p = 4448
+problem3_tb.v:30: $finish called at 6 (1s)
